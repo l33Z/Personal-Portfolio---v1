@@ -253,3 +253,26 @@
     margin: 5rem 0;
   }
 }
+@media only screen and (max-width: 390px) {
+  .Contact__Heading h1 {
+    font-size: 2.8rem;
+  }
+
+  .Contact__Links {
+    width: 100%;
+  }
+  .Contact__Links h3 {
+    font-size: 2.5rem;
+  }
+  .con__link {
+    margin-right: 1.3rem;
+    margin-bottom: 1.8rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+  }
+  .Email_Link {
+    margin: 3rem 0;
+    font-size: 1.7rem;
+  }
+}

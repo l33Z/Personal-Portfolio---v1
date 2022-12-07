@@ -188,3 +188,25 @@ body {
     font-size: 2.8rem;
   }
 }
+
+@media only screen and (max-width: 390px) {
+  .Home__Main {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .Home__Main p {
+    font-size: 1.4rem;
+  }
+  .Home__Main h1 {
+    font-size: 3rem;
+  }
+  .Home__Main h2 {
+    font-size: 2.3rem;
+  }
+  .Home__Main h5 {
+    margin: 2rem 0;
+    margin-top: 1.5rem;
+    max-width: 640px;
+    font-size: 1.6rem;
+  }
+}
