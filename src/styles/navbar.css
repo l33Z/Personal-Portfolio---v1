@@ -1,0 +1,90 @@
+.Navbar__Main {
+  position: fixed;
+  top: 5rem;
+  right: 0px;
+  left: 0px;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(42, 43, 56, 0.5);
+  border: 0.2rem solid rgb(42, 43, 55);
+  backdrop-filter: blur(104px);
+  border-radius: 2rem;
+  z-index: 1000;
+}
+
+.Nvbar__level1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Navbar__logo {
+  text-decoration: none;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-family: "Monoton", monospace;
+  color: #c4c4c4;
+}
+
+.Navbar__Menu__Option h2 {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+#menu_icon {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.Navbar__links {
+  display: none;
+  list-style: none;
+}
+.Nvbar__level2 {
+  overflow: hidden;
+}
+.Navbar__links.open {
+  margin-top: 2rem;
+  /* background-color: #b45efc; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.Navbar__links li {
+  margin-left: 2rem;
+  margin: 2rem auto;
+}
+
+.Navbar__links li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #c4c4c4;
+  transition: all 0.3s ease;
+}
+
+.Navbar__links li a:hover {
+  color: #b152ff;
+  font-size: 1.9rem;
+}
+
+@media only screen and (max-width: 786px) {
+  .Navbar__Main {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 416px) {
+  .Navbar__logo {
+    font-size: 2.7rem;
+  }
+}

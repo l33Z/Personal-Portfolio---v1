@@ -1,0 +1,159 @@
+.Tech__Main {
+  padding: 0 18rem;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  margin-bottom: 10rem;
+}
+
+.Tech__Heading {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.Tech__Heading h1 {
+  font-family: "Monoton", cursive;
+  color: rgb(91, 100, 108);
+  margin-left: 2rem;
+  font-size: 7rem;
+}
+
+.Tech__Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Tech__Skills_Name {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.Tech__Skills_Name h3 {
+  background-color: rgba(84, 132, 156, 0.466);
+  padding: 0.8rem 2.3rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 40px 0 rgb(7 0 20 / 5%), 0 4px 6px 0 rgb(7 0 20 / 5%),
+    0 10px 15px -3px rgb(7 0 20 / 10%), 0 0 0 1px rgb(7 0 20 / 6%);
+}
+
+.Skills__Problem__Solving {
+  margin-top: 5rem;
+}
+
+.Skills__Problem__Solving h2 {
+  color: #94a6b3;
+  font-size: 2.2rem;
+}
+
+.Coding__Profiles {
+  display: flex;
+  width: 50%;
+  margin: 2rem 0;
+}
+
+.Profile {
+  margin: 2rem;
+  width: 20%;
+  min-width: 10rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #c0e3ff14;
+  box-shadow: 0 30px 40px 0 rgb(7 0 20 / 5%), 0 4px 6px 0 rgb(7 0 20 / 5%),
+    0 10px 15px -3px rgb(7 0 20 / 10%), 0 0 0 1px rgb(7 0 20 / 6%);
+  border: 1px solid rgba(255, 255, 255, 0.121);
+}
+
+.Coding__Profiles .Profile:hover {
+  background-color: #55b3ff80;
+}
+
+.Profile img {
+  width: 100%;
+  min-width: 5rem;
+  object-fit: cover;
+}
+
+.Skills__Experience h2 {
+  color: #94a6b3;
+  width: 60%;
+  line-height: 1.3;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1450px) {
+  .Tech__Main {
+    padding: 0 12rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Skills__Experience h2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Tech__Main {
+    padding: 0 8rem;
+    min-height: auto;
+  }
+  .Tech__Skills_Name h3 {
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .Skills__Experience h2 {
+    width: 90%;
+  }
+  .Tech__Heading img {
+    width: 12rem;
+  }
+  .Tech__Heading h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .Tech__Main {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .Tech__Main {
+    padding: 0;
+    padding-left: 1.5rem;
+  }
+  .Skills__Experience h2 {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .Tech__Heading img {
+    width: 8rem;
+  }
+  .Tech__Heading h1 {
+    font-size: 4rem;
+  }
+  .Skills__Problem__Solving h2 {
+    font-size: 1.8rem;
+  }
+  .Tech__Skills_Name h3 {
+    padding: 0.5rem 2rem;
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+}

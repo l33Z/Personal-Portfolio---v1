@@ -1,0 +1,254 @@
+.Project__Main {
+  padding: 0 15rem;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  /* background-color: #050810; */
+  margin-bottom: 10rem;
+}
+
+.Project__Heading {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.Project__Heading h1 {
+  font-family: "Monoton", cursive;
+  color: rgb(91, 100, 108);
+  margin-left: 2rem;
+  font-size: 7rem;
+}
+
+.Project__Lists {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Project__Box {
+  margin-bottom: 5rem;
+  width: 28%;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(35, 37, 49, 0.5)),
+    to(rgba(15, 15, 24, 0.5))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(35, 37, 49, 0.5),
+    rgba(15, 15, 24, 0.5)
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(35, 37, 49, 0.5),
+    rgba(15, 15, 24, 0.5)
+  );
+  border: 0.2rem solid #20222e;
+  /* padding: 1rem 2rem; */
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+
+  /* background-color: #171e2f; */
+  transition: all 0.3s ease-in-out;
+}
+
+.Project__Box:hover {
+  scale: 1.05;
+}
+
+.Project__Box img {
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+.Project__info {
+  padding: 1rem 2rem;
+}
+.Project__info h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  background: -webkit-linear-gradient(
+    135deg,
+    #045de9,
+    #09c6f9,
+    #1ba8be,
+    #187ad7
+  );
+  background: linear-gradient(-45deg, #045de9, #09c6f9, #1ba8be, #187ad7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 400% 400%;
+}
+
+.Project__info h3 {
+  color: #ede6e6;
+  text-align: justify;
+  margin: 1rem 0 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.Project__Btns {
+  display: flex;
+  width: 100%;
+}
+
+.Project__btn {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  width: max-content;
+  font-size: 1.6rem;
+  background-color: #6bc5f8;
+  color: black;
+  text-align: center;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Project__btn:hover {
+  background-color: #34b5ff;
+}
+
+.Project__btn.github {
+  margin-left: 1rem;
+  background-color: #594889;
+  color: white;
+}
+.Project__btn.github:hover {
+  background-color: #8c6be8;
+}
+.Project__btn.github a {
+  color: white;
+}
+
+.Project__techUsed {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Project__techUsed p {
+  font-weight: 400;
+  color: #e8dddd;
+  font-size: 1.2rem;
+  padding: 0.1rem 0.4rem;
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: #20222e;
+}
+
+.Project__MoreProjects {
+  cursor: pointer;
+  align-self: center;
+  margin: 2rem 0;
+  border-radius: 10000000px;
+  background-color: #17181c;
+  padding: 0.7rem 1.4rem;
+  font-size: 1.8rem;
+  width: max-content;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.Project__MoreProjects::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10000000px;
+  background-image: linear-gradient(
+    35deg,
+    #fa0,
+    #fd66cb 21%,
+    #9f6eff 50%,
+    #0af 75%,
+    #0fa
+  );
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.Project__MoreProjects:hover::before {
+  transform: scale3d(1.05, 1.05, 1);
+  transform-style: preserve-3d;
+}
+
+@media only screen and (max-width: 1450px) {
+  .Project__Main {
+    padding: 0 12rem;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .Project__Box {
+    width: 38%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .Project__Box {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Project__Main {
+    padding: 0 8rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .Project__Heading h1 {
+    font-size: 5.5rem;
+  }
+  .Project__Heading img {
+    width: 12rem;
+  }
+  .Project__Box {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .Project__Main {
+    margin-bottom: 5rem;
+    padding: 0 3rem;
+  }
+  .Project__Box {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .Project__Main {
+    padding: 1rem;
+  }
+  .Project__Heading h1 {
+    font-size: 4rem;
+  }
+  .Project__Heading img {
+    width: 8rem;
+  }
+  .Project__Box {
+    width: 95%;
+  }
+}

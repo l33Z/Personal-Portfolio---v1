@@ -1,0 +1,190 @@
+body {
+  --color-gray: #c4c4c4;
+  --color-purple: #8000ff;
+  --color-light-purple: #cf59e6;
+  --color-light-blue: #6bc5f8;
+}
+
+.Home__Main {
+  padding: 0 18rem;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /* margin-bottom: 10rem; */
+}
+
+.Home__Main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26rem;
+  height: 26rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("/hand-left.webp");
+}
+
+.Home__Main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25rem;
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./hand-right.webp");
+  z-index: -1;
+}
+
+.Home__Main p {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.Home__Main h1 {
+  line-height: 108px;
+  font-weight: 600;
+  font-size: clamp(40px, 8vw, 80px);
+
+  background: -webkit-linear-gradient(
+    135deg,
+    var(--color-light-blue),
+    var(--color-light-purple),
+    var(--color-light-blue),
+    var(--color-light-purple)
+  );
+
+  background: linear-gradient(
+    -45deg,
+    var(--color-light-blue),
+    var(--color-light-purple),
+    var(--color-light-blue),
+    var(--color-light-purple)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 3s ease infinite;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
+
+.Home__Main h2 {
+  font-size: clamp(40px, 8vw, 80px);
+  line-height: 1.1;
+  font-weight: 600;
+  font-size: clamp(40px, 8vw, 80px);
+  color: rgb(161, 187, 192);
+  color: rgb(199, 213, 216);
+  color: #94a6b3;
+}
+
+.Home__Main h5 {
+  line-height: 1.5 !important;
+  margin: 2rem 0;
+  max-width: 640px;
+  line-height: 26px;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #94a6b3;
+}
+
+@media only screen and (max-width: 1450px) {
+  .Home__Main {
+    padding: 0 14rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Home__Main::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Home__Main {
+    min-height: auto;
+    padding: 15rem 14rem;
+    padding-bottom: 10rem;
+  }
+  .Home__Main p {
+    margin-bottom: 0rem;
+  }
+  .Home__Main h1 {
+    font-size: 6.3rem;
+  }
+  .Home__Main h2 {
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Home__Main {
+    padding-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Home__Main::before {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .Home__Main {
+    padding-left: 5rem;
+  }
+  .Home__Main h1 {
+    font-size: 5.3rem;
+  }
+  .Home__Main h2 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .Home__Main p {
+    margin-bottom: 1.5rem;
+  }
+  .Home__Main h1 {
+    font-size: 4.3rem;
+    line-height: 1.8;
+  }
+  .Home__Main h2 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .Home__Main p {
+    margin-bottom: 0rem;
+  }
+  .Home__Main h1 {
+    font-size: 4rem;
+  }
+  .Home__Main h2 {
+    font-size: 2.8rem;
+  }
+}
